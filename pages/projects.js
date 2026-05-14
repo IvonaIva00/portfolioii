@@ -72,10 +72,10 @@ export default function Projects() {
     </div>
    
     </div>
-
+<div className={styles.title_block}>
     <h1 className={styles.page_title}>Projects</h1>
     <div className={styles.project_underline}></div>
-   
+    </div>
      <div className={styles.big_container}>
 
 <div className={styles.project_one}>
