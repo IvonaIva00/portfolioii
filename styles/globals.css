@@ -1,0 +1,22 @@
+:root {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    color: white; /* optional */
+    background-color: #000000; /* optional */
+    margin: 0;
+    padding: 0;
+  }
+  /* globals.css */
+
+/* Import Sora font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+/* Your existing Bodoni import */
+@font-face {
+  font-family: 'Bodoni72';
+  src: url('/fonts/Bodoni72-Book.ttf') format('truetype');
+}

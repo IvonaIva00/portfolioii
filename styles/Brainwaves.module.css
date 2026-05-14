@@ -1,0 +1,547 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.constellationBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.backgroundGlow{
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  width: 700px;
+  height: 700px;
+
+  background: radial-gradient(
+    circle,
+    rgba(244,77,0,0.45) 0%,
+    rgba(244,77,0,0.25) 30%,
+    rgba(244,77,0,0.08) 55%,
+    transparent 75%
+  );
+
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.backgroundGlow2{
+  position: fixed;
+  bottom: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+
+  background: radial-gradient(
+    circle,
+    rgba(244,77,0,0.35) 0%,
+    rgba(244,77,0,0.15) 40%,
+    transparent 70%
+  );
+
+  filter: blur(140px);
+  pointer-events: none;
+}
+/* fonts.css */
+@font-face {
+  font-family: 'Bodoni72';
+  src: url('/fonts/Bodoni72-Book.ttf') format('truetype');
+  /* Add other font formats if necessary */
+}
+@keyframes slideUp{
+  from{
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.page_content{
+  animation: slideUp 0.8s ease-out;
+}
+
+.scroll_animation {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.7s ease;
+}
+
+.scroll_visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.first_title{
+  color: #a3a3a3;
+  font-size: 18px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-family: 'Bodoni72', sans-serif;
+  }
+.first_title:hover{
+  color: #F44D00;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.navbar{
+  display: flex;
+  height: 80px;
+  width: 85%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  border-bottom: 2px solid #a3a3a3;
+  /* margin-bottom: 95px; */
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.title_button{
+  display: flex;
+  flex-direction: row;
+  gap: 675px;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.logo{
+  margin-left: 200px;
+    align-items: center;
+  }
+.work{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  }
+.second_title{
+    color: #a3a3a3;
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: 'Bodoni72', sans-serif;
+    
+  }
+.second_title:hover{
+    color: #F44D00;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+.third_title:hover{
+    color: #F44D00;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  @font-face {
+    font-family: 'Bodoni72';
+    src: url('/fonts/Bodoni72-Book.ttf') format('truetype');
+    /* Add other font formats if necessary */
+  }
+  .button{
+    width: 280px;
+    height: 55px;
+    color: white;
+    background-color: #F44D00 ;
+    border-color: #F44D00;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-family: 'Bodoni72', sans-serif;
+   }
+  .button:hover {
+    transform: translateY(-3px); /* moves button slightly up */
+    box-shadow: 0 6px 18px rgba(244, 77, 0, 0.45); /* orange glow */
+  }
+
+  .LOFI{
+    margin-right: 40px;
+    margin-top: 50px;
+  }
+  .third_title{
+    color: #a3a3a3;
+    font-size: 18px;
+    margin-top: 30px;
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .second_title{
+    color: #a3a3a3;
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: 'Bodoni72', sans-serif;
+    }
+
+  .brainwaves{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-family: 'Bodoni72', sans-serif;
+}
+
+  .mobile_animation{
+    height: 500px;
+    width: 450px;
+  }
+  .explanation{
+    display: flex;
+    flex-direction: column;
+  }
+  .research{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+  }
+  .video{
+    height: 300px;
+    margin-top: 200px;
+  }
+  .name{
+    color: aliceblue;
+    width: 150px;
+    margin-bottom: 200px;
+    font-size: 60px;
+    font-family: 'Bodoni72', sans-serif;
+   
+  }
+  .app{
+    color: aliceblue;
+    font-family: 'Bodoni72', sans-serif;
+    margin-top: 0;
+  }
+  .app_logo{
+    color: aliceblue;
+    align-self: start;
+    
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .app_process_logo{
+    color: aliceblue;
+    /* width: 480px; */
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+    align-self: start;
+    margin-left: 310px;
+  }
+  .app_bold{
+    font-weight: bold;
+    font-family: 'Bodoni72', sans-serif;
+    color: aliceblue;
+    
+  }
+  .link{
+    color: aliceblue;
+    text-decoration: none;
+  }
+  .colors{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .app_process{
+    color: aliceblue;
+    width: 480px;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+    margin-bottom: 20px;
+  }
+  .app_process_brainwaves{
+    color: aliceblue;
+    width: 1200px;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .app_process_lofi{
+    color: aliceblue;
+    width: 1200px;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .app_process_hifi{
+    color: aliceblue;
+    width: 1200px;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .firstcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* this fixes the alignment */
+    gap: 150px;
+    margin-top: 100px;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+  }
+  .secondcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 100px;
+  }
+  .description_two{
+    display: flex;
+    flex-direction: column;
+  }
+  .user_persona{
+    display: flex;
+    flex-direction: column;
+  }
+  .development{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  .research_container{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .problem_solution{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin-top: 120px;
+    width: 1200px;
+    align-items: flex-start;
+  }
+  .problem{
+    flex: 1;
+  }
+  .solution{
+    flex: 1;  
+  }
+  .user_persona{
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    gap: 300px;
+  }
+  .user_persona_paragraph{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .primary_user_map{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .mascot_wimmy{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 200px;
+  }
+  .mockups{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* margin-top: 120px; */
+  }
+  .app_subheader{
+    color: aliceblue;
+    margin-top: 100px;
+  }
+  .lofi_design_two{
+
+  }
+  .mockups_two{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .hifi_design{
+    margin-top: 100px;
+  }
+  .lofi_design{
+    margin-top: 100px;
+  }
+  .screen_and_name{
+    display: flex;
+    flex-direction: column;
+  }
+  .wimmy_description{
+    display: flex;
+    flex-direction: column;
+  }
+  .development_container{
+    margin-top: 200px;
+    }
+  .challenges{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .words{
+    display: flex;
+    flex-direction: column;
+  }
+  .image{
+    margin-bottom: 50px;
+  }
+  .solution_two{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 100px;
+  }
+  .code{
+    
+  }
+  .app_process_dev{
+    width: 1200px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .app_process_design{
+    width: 1200px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+  }
+  .dev_solution{
+    margin-left: 80px;
+  }
+  .image_solution{
+    margin-bottom: 50px;
+  }
+  
+  .video:hover{
+    transform: scale(1.01);
+  }
+  .case_study_section{
+    width: 1200px;
+    max-width: 90vw;
+  
+    margin: 10px auto 50px auto; /* 👈 smaller gap ABOVE */
+  }
+  .case_study_header{
+    width: 1200px;
+    max-width: 90vw;
+  
+    margin: 0 auto 10px auto;
+  
+    text-align: left; /* 👈 key change */
+  }
+  
+  .case_title{
+    color: white;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  
+  .case_subtitle{
+    color: aliceblue;
+    width: 480px;
+    font-size: 20px;
+    font-family: 'Bodoni72', sans-serif;
+    margin-bottom: 30px;
+  }
+  .video_frame{
+    width: 100%;
+  
+    padding: 12px; /* was 18px → tighter = more cinematic */
+  
+    background: rgba(255,255,255,0.03);
+  
+    border: 1px solid rgba(255,255,255,0.12);
+    
+      line-height: 0;
+    
+    border-radius: 18px;
+  
+    box-shadow:
+      0 30px 80px rgba(0,0,0,0.7),
+      0 0 60px rgba(244,77,0,0.15);
+  
+    position: relative;
+    display: block; 
+  
+    backdrop-filter: blur(10px);
+  }
+  .video{
+      width: 100%;
+      height: 650px;
+      display: block;
+  
+        margin-top: 0;
+    
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 40px rgba(244,77,0,0.2);
+
+  transition: all 0.4s ease;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .video_frame::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    border-radius: 18px;
+  
+    background: radial-gradient(
+      circle at center,
+      rgba(244,77,0,0.08),
+      transparent 70%
+    );
+  
+    pointer-events: none;
+  }
+  .line_footer{
+    height: 2px;
+    width: 100vw;
+    background-color: #1F1F1F;
+    margin-top: 20px;
+    color: #a3a3a3; ;
+  }
+  .footer_line{
+    height: 2px;
+    width: 100%;
+    background-color: #a3a3a3;
+  }
+  .footer{
+    width: 85%;
+    border-top: #a3a3a3  ;
+    justify-content: center;
+  }
+  .footer_row{
+    display: flex;
+    flex-direction: row;
+    gap: 1000px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footnote{
+    color: #a3a3a3;
+    
+    font-size: 20px;
+  }
+ 
+
