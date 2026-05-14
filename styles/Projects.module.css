@@ -1,14 +1,14 @@
-
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  width: 100vw;
   height: 100%;
-  width: 100%;
-  background-color: #000000; 
-  /* position: relative; */
+  position: relative;
   z-index: 1;
+
 }
 @keyframes slideUp {
   from {
@@ -79,7 +79,7 @@
   margin-top: 20px;
 }
 .logo{
-  margin-left: 200px;
+ 
     align-items: center;
   }
 
@@ -159,6 +159,29 @@
     margin: 40px auto 0 auto;
     padding: 0 20px;
   }
+  .project_one,
+.project_two,
+.project_three,
+.project_four,
+.project_five {
+  width: 85%;
+  max-width: 1300px;
+
+  min-height: 380px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: clamp(20px, 3vw, 40px);
+
+  margin: 60px auto;
+
+  border-radius: 14px;
+
+  position: relative;
+  overflow: hidden;
+}
   .project_one {
     width: 100%;
     max-width: 1200px;
@@ -441,6 +464,7 @@ margin: 60px auto;
     transition:transform 0.45s ease,
     box-shadow 0.45s ease;
   }
+  
   
   .project_two:hover .project_image_two {
     transform: scale(1.03);
@@ -948,7 +972,7 @@ margin: 60px auto;
   }
   .icons {
     display: flex;
-    gap: 2px;
+   
     align-items: center;
   }
 
