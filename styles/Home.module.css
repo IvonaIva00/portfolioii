@@ -1,14 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* push content from top, don’t center */
-  align-items: center;
   min-height: 100vh;
-  width: 100vw;
-  background-color: #000000;
-  position: relative;
-  z-index: 1;
-  padding-top: 20px; /* optional small spacing from top */
+  width: 100%;
+  background-color: #000;
 }
 
 @keyframes slideUp {
@@ -83,6 +78,18 @@
   filter: blur(140px);
   pointer-events: none;
 }
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* keeps container system clean */
+  padding-top: 40px;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 .navbar{
   display: flex;
   height: 80px;
@@ -92,7 +99,8 @@
   align-items: center;
   border-bottom: 2px solid #a3a3a3;
   padding-bottom: 10px;
-  margin-bottom: 95px;
+  margin-top: 20px;
+  /* margin-bottom: 95px; */
 }
 
 .work{
@@ -104,35 +112,39 @@
 
 .name_picture_description {
   display: flex;
-  flex-direction: row;
- 
-  /* border-style: solid; */
-  border-radius: 10px;
- 
- width: 900px;
- align-items: flex-start;
-  /* border-radius: 5px ; */
-  margin-right: 400px;
-  
-  height: 260px;
-  width: 850px;
-  margin-bottom: 100px;
-   
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
- 
-  
- 
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 850px;
 }
-.big_container{
+.introduction,
+.description,
+.buttons {
+  width: 100%;
+}
+.big_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.description{
-  margin-top: 80px;
+
+/* THIS is the key new wrapper */
+.text_block {
   width: 700px;
+}
+.description {
+  margin-top: 100px;
+  width: 100%;
+
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  align-items: flex-start;
 }
 
 /* .introduction {
@@ -148,16 +160,6 @@ width: 1000px;
 }
 
 
-
-.big_container{
-  display: flex;
-  flex-direction: row;
-  
-  /* margin-bottom: 300px; */
-  /* background-image: radial-gradient( #CFB53B 3px, transparent 20px);
-  background-size: 50px 50px; */
-}
-
 .first_container{
   display: flex;
   flex-direction: row;
@@ -168,8 +170,10 @@ width: 1000px;
 }
 
 .job_description{
-  width: 900px;
-  font-size: 50px;
+  width: 100%;
+  max-width: 900px;
+  font-size: clamp(28px, 4vw, 50px);
+  text-align: left;
   animation: slideUp 0.7s ease-out;
   animation-delay: 0.2s;
   animation-fill-mode: backwards;
@@ -229,8 +233,10 @@ width: 1000px;
   
 }
 .introduction{
-  font-size: 70px;
-  width: 700px;
+  font-size: clamp(40px, 5vw, 70px);
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
 
   animation: slideUp 0.7s ease-out;
  
@@ -273,18 +279,21 @@ width: 1000px;
   box-shadow:
     0 6px 18px rgba(244,77,0,0.22);
 }
-.buttons{
+.buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 120px;
 
-  gap: 150px;
-
-  margin-right: 545px;
-  margin-bottom: 300px;
-
+  margin-top: 100px;
+  margin-left: 120px;
   animation: slideUp 0.7s ease-out;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
   animation-fill-mode: backwards;
+
+  /* REMOVE THESE if you still have them */
+  /* align-self */
+  /* max-width */
 }
 .button1:hover,
 .button2:hover{
@@ -303,27 +312,62 @@ width: 1000px;
     margin-top: 20px;
     color: #a3a3a3; ;
   }
-  .footer_line{
+  .footer {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer_line {
+   
     height: 2px;
-    width: 100%;
     background-color: #a3a3a3;
   }
-  .footer{
-    width: 85%;
-    border-top: #a3a3a3  ;
-    justify-content: center;
   
-    
-  }
-  .footer_row{
+  .footer_row {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    flex-direction: row;
-    gap: 1000px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
   }
+  .footer_line,
+.footer_row {
+  max-width: 85%;
+  width: 85%;
+  width: 85%;
+  margin: 0 auto;
+}
   .footnote{
     color: #a3a3a3;
     
     font-size: 20px;
+  }
+
+  @media (max-width: 1024px) {
+
+    .navbar {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    .work {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .introduction {
+      font-size: 42px;
+    }
+  
+    .job_description {
+      font-size: 28px;
+    }
+  
+    .buttons {
+      gap: 120px;
+    }
   }

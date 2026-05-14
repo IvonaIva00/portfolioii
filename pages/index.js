@@ -105,7 +105,7 @@ export default function Home() {
       <canvas className={styles.neuralBackground}></canvas>
       <div className={styles.backgroundGlow}></div>
       <div className={styles.backgroundGlow2}></div>
-        
+     
       <div className={styles.navbar}>
          <Link  href="/">
          
@@ -129,7 +129,8 @@ export default function Home() {
     <div className={styles.navbar_line}></div>
      
      
-     
+    <div className={styles.content}>
+    <div className={styles.container}>
 <div className={styles.big_container}>
   <div className={styles.name_picture_description}>
    
@@ -159,8 +160,8 @@ Hello! I'm <span className={styles.name}>Ivona</span>
         </Link>
     
         </div>
-
-
+</div>
+</div>
        <div className={styles.footer}>
             <div className={styles.footer_line}></div>
             <div className={styles.footer_row}>
