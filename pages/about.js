@@ -148,6 +148,7 @@ export default function Projects() {
     <div className={styles.skill_card}>HTML</div>
     <div className={styles.skill_card}>CSS</div>
     <div className={styles.skill_card}>JavaScript</div>
+    <div className={styles.skill_card}>TypeScript</div>
     <div className={styles.skill_card}>React</div>
     <div className={styles.skill_card}>Firebase</div>
     <div className={styles.skill_card}>Git</div>
