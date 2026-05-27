@@ -60,14 +60,14 @@ export default function Designs () {
       </Link> 
       <div className={styles.work}>
       <Link className={styles.link}  href="/">
-      <h1 className={styles.first_title}>HOME</h1></Link>
+      <h1 className={styles.first_title}>Home</h1></Link>
       <Link className={styles.link}  href="/projects">
-    <h1 className={styles.second_title}>PROJECTS</h1></Link>
+    <h1 className={styles.second_title}>Projects</h1></Link>
     <Link className={styles.link} href="/designs">
-        <h1 className={styles.third_title}>DESIGN</h1>
+        <h1 className={styles.third_title}>Design</h1>
         </Link>
         <Link className={styles.link} href="/about">
-        <h1 className={styles.fourth_title}>ABOUT</h1>
+        <h1 className={styles.fourth_title}>About</h1>
         </Link>
     </div>
    

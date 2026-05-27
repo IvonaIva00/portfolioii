@@ -1,4 +1,4 @@
-
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap');
 .main {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@
       font-size: 18px;
       margin-top: 30px;
       text-decoration: none;
-      font-family: 'Bodoni72', sans-serif;
+      font-family: 'Satoshi', sans-serif;
       }
     .first_title:hover{
       color: #F44D00;
@@ -151,7 +151,7 @@
         color: #a3a3a3;
         font-size: 18px;
         margin-top: 30px;
-        font-family: 'Bodoni72', sans-serif;
+        font-family: 'Satoshi', sans-serif;
       
     }
     .second_title:hover{
@@ -163,7 +163,7 @@
         color: #a3a3a3;
         font-size: 18px;
         margin-top: 30px;
-        font-family: 'Bodoni72', sans-serif;
+        font-family: 'Satoshi', sans-serif;
     }
     .third_title:hover{
         color: #F44D00;
@@ -174,7 +174,7 @@
         color: #F44D00;
         font-size: 18px;
         margin-top: 30px;
-        font-family: 'Bodoni72', sans-serif;
+        font-family: 'Satoshi', sans-serif;
         text-decoration: underline;
         text-underline-offset: 8px;
       }  
