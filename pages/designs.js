@@ -55,7 +55,7 @@ export default function Designs () {
                      <div className={styles.navbar}>
          <Link  href="/">
          
-      <Image alt="logo"  src="/images/Logo01.png" height={65} width={91} />
+      <Image alt="logo"  src="/images/Logo01.png" height={60} width={85} />
       
       </Link> 
       <div className={styles.work}>

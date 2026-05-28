@@ -179,6 +179,7 @@ width: 1000px;
   animation: slideUp 0.7s ease-out;
   animation-delay: 0.2s;
   animation-fill-mode: backwards;
+  font-family: 'Satoshi', sans-serif;
 }
 .first_title{
   color: #F44D00;
@@ -239,6 +240,7 @@ width: 1000px;
   width: 100%;
   max-width: 700px;
   text-align: left;
+  font-family: 'Satoshi', sans-serif;
 
   animation: slideUp 0.7s ease-out;
  
