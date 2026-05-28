@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   position: relative;
   z-index: 1;
@@ -193,7 +193,7 @@
     max-width: 1200px;
     margin: 60px auto 0 auto;
   
-    height: 380px;
+    min-height: 380px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -377,7 +377,7 @@
     width: 100%;
 max-width: 1200px;
 margin: 60px auto;
-    height: 380px;
+min-height: 380px;
   
     display: flex;
     align-items: center;
@@ -559,7 +559,7 @@ margin: 60px auto;
     width: 100%;
 max-width: 1200px;
 margin: 60px auto;
-    height: 380px;
+min-height: 380px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -742,7 +742,7 @@ margin: 60px auto;
     width: 100%;
 max-width: 1200px;
 margin: 60px auto;
-    height: 380px;
+min-height: 380px;
   
     display: flex;
     flex-direction: row;
@@ -832,7 +832,7 @@ margin: 60px auto;
     width: 100%;
 max-width: 1200px;
 margin: 60px auto;
-    height: 380px;
+min-height: 380px;
   
     display: flex;
     align-items: center;
@@ -981,4 +981,220 @@ margin: 60px auto;
    
     align-items: center;
   }
+  @media (max-width: 1400px) {
 
+    .project_one,
+    .project_two,
+    .project_three,
+    .project_four,
+    .project_five {
+  
+      width: 90%;
+  
+      min-height: 340px;
+  
+      padding: 35px;
+  
+      gap: 30px;
+    }
+  
+    .left_column,
+    .left_column_two,
+    .left_column_three,
+    .left_column_four,
+    .left_column_five {
+  
+      max-width: 420px;
+  
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+  
+    .right_column,
+    .right_column_two,
+    .right_column_three,
+    .right_column_four,
+    .right_column_five {
+  
+      padding-right: 10px;
+    }
+  
+    .project_image,
+    .project_image_two,
+    .project_image_three,
+    .project_image_four,
+    .project_image_five {
+  
+      width: 100%;
+      max-width: 460px;
+  
+      height: auto;
+    }
+  
+    .app_title,
+    .app_title_two,
+    .app_title_three,
+    .app_title_five {
+  
+      font-size: 30px;
+    }
+  
+    .app_description,
+    .app_description_two,
+    .app_description_three {
+  
+      font-size: 16px;
+  
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 1150px) {
+
+    .project_one,
+    .project_two,
+    .project_three,
+    .project_four,
+    .project_five {
+  
+      flex-direction: column;
+  
+      height: auto;
+  
+      text-align: center;
+  
+      padding: 50px 30px;
+    }
+  
+    .left_column,
+    .left_column_two,
+    .left_column_three,
+    .left_column_four,
+    .left_column_five {
+  
+      max-width: 100%;
+  
+      align-items: center;
+  
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+  
+    .right_column,
+    .right_column_two,
+    .right_column_three,
+    .right_column_four,
+    .right_column_five {
+  
+      justify-content: center;
+  
+      padding-right: 0;
+    }
+  
+    .project_image,
+    .project_image_two,
+    .project_image_three,
+    .project_image_four,
+    .project_image_five {
+  
+      max-width: 500px;
+  
+      width: 100%;
+  
+      margin-top: 10px;
+    }
+  
+    .app_description,
+    .app_description_two,
+    .app_description_three {
+  
+      max-width: 700px;
+    }
+  
+    .project_one::after,
+    .project_two::after,
+    .project_three::after,
+    .project_four::after,
+    .project_five::after {
+  
+      left: 30px;
+      top: 30px;
+    }
+  }
+  @media (max-width: 1350px) {
+
+    .project_one,
+    .project_two,
+    .project_three,
+    .project_four,
+    .project_five {
+  
+      padding: 30px 25px;
+  
+      gap: 25px;
+    }
+  
+    .left_column,
+    .left_column_two,
+    .left_column_three,
+    .left_column_four,
+    .left_column_five {
+  
+      max-width: 380px;
+      padding-left: 20px;
+    }
+  
+    .project_image,
+    .project_image_two,
+    .project_image_three,
+    .project_image_four,
+    .project_image_five {
+  
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .app_title,
+    .app_title_two,
+    .app_title_three,
+    .app_title_five {
+  
+      font-size: 30px;
+    }
+  
+    .app_description,
+    .app_description_two,
+    .app_description_three {
+  
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1200px) {
+
+    .project_one,
+    .project_two,
+    .project_three,
+    .project_four,
+    .project_five {
+  
+      flex-wrap: wrap;
+    }
+  
+    .left_column,
+    .left_column_two,
+    .left_column_three,
+    .left_column_four,
+    .left_column_five {
+  
+      max-width: 100%;
+    }
+  
+    .right_column,
+    .right_column_two,
+    .right_column_three,
+    .right_column_four,
+    .right_column_five {
+  
+      justify-content: center;
+    }
+  }
