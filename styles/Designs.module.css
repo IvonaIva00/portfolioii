@@ -102,7 +102,7 @@
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  border-bottom: 2px solid #a3a3a3;
+  border-bottom: 2px solid rgba(255,255,255,0.15);
   /* margin-bottom: 95px; */
   padding-bottom: 10px;
   margin-top: 20px;
@@ -497,7 +497,7 @@
 .footer_line {
   width: 85%;
   height: 2px;
-  background-color: #a3a3a3;
+  background-color: rgba(255,255,255,0.15);
 }
 
 .footer_row {

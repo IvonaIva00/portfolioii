@@ -111,7 +111,7 @@
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    border-bottom: 2px solid #a3a3a3;
+    border-bottom: 2px solid rgba(255,255,255,0.15);
     /* margin-bottom: 95px; */
     padding-bottom: 10px;
     margin-top: 20px;
@@ -276,11 +276,13 @@
       z-index: 2;
     
       /* MUCH LIGHTER */
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+      
+      
+     
       border-radius: 14px;
-    
+      background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
       border-radius: 20px;
     
       backdrop-filter: blur(4px);
@@ -859,7 +861,7 @@
     .footer_line {
       width: 85%;
       height: 2px;
-      background-color: #a3a3a3;
+      background-color: rgba(255,255,255,0.15);
       margin: 0 auto;
     }
     .footer {

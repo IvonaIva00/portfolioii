@@ -152,11 +152,11 @@ Hello! I'm <span className={styles.name}>Ivona</span>
   
   </div>
   <div className={styles.buttons}>
-  <Link  href="/projects" className={styles.button_link}>
-            <button className={styles.button1}>View Projects</button>
+  <Link  href="/about" className={styles.button_link}>
+            <button className={styles.button1}>About Me</button>
         </Link>
         <Link  href="/designs" className={styles.button_link}>
-            <button className={styles.button2}>View Designs</button>
+            <button className={styles.button2}>Contact Me</button>
         </Link>
     
         </div>
