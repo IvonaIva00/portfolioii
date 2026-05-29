@@ -205,7 +205,7 @@ export default function Projects() {
     </a>
 
     <a
-      href="mailto:your@email.com"
+      href="mailto:ivona.i.work@gmail.com"
       className={styles.contact_card}
     >
       <Image
