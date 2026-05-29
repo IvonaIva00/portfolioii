@@ -161,7 +161,68 @@ export default function Projects() {
     <div className={styles.skill_card}>Affinity Designer</div>
   </div>
 </div>
+<div id="contact" className={styles.contact_section}>
+  <h2 className={styles.skills_title}>Contact Me</h2>
 
+  <div className={styles.contact_grid}>
+
+    <a
+      href="https://github.com/IvonaIva00"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.contact_card}
+    >
+      <Image
+        src="/images/github-gray.png"
+        height={38}
+        width={38}
+        alt="GitHub"
+      />
+
+      <div className={styles.contact_info}>
+        <span className={styles.contact_label}>GitHub</span>
+        <span className={styles.contact_value}>View Profile</span>
+      </div>
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/ivona-iv/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.contact_card}
+    >
+      <Image
+        src="/images/linkedin-gray.png"
+        height={38}
+        width={38}
+        alt="LinkedIn"
+      />
+
+      <div className={styles.contact_info}>
+        <span className={styles.contact_label}>LinkedIn</span>
+        <span className={styles.contact_value}>Connect With Me</span>
+      </div>
+    </a>
+
+    <a
+      href="mailto:your@email.com"
+      className={styles.contact_card}
+    >
+      <Image
+        src="/images/email-gray.png"
+        height={38}
+        width={38}
+        alt="Email"
+      />
+
+      <div className={styles.contact_info}>
+        <span className={styles.contact_label}>Email</span>
+        <span className={styles.contact_value}>Send Message</span>
+      </div>
+    </a>
+
+  </div>
+</div>
 <div className={styles.footer}>
             <div className={styles.footer_line}></div>
             <div className={styles.footer_row}>

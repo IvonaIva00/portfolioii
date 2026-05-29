@@ -851,6 +851,226 @@
     
       background: rgba(255,255,255,0.06);
     }
+    .contact_grid {
+      display: flex;
+      flex-wrap: wrap;
+    
+      gap: 22px;
+    
+      margin-left: 30px;
+    
+      position: relative;
+      z-index: 2;
+    }
+    .contact_card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    
+      padding: 18px 26px;
+    
+      min-width: 220px;
+    
+      background: rgba(255,255,255,0.04);
+    
+      border: 1px solid rgba(255,255,255,0.12);
+    
+      border-radius: 18px;
+    
+      text-decoration: none;
+    
+      color: white;
+    
+      font-size: 18px;
+      font-family: 'Bodoni72', sans-serif;
+    
+      backdrop-filter: blur(10px);
+    
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+    
+      transition: all 0.35s ease;
+    }
+    .contact_card:hover {
+      transform: translateY(-5px);
+    
+      border-color: rgba(244,77,0,0.45);
+    
+      background: rgba(255,255,255,0.06);
+    
+      box-shadow:
+        0 20px 40px rgba(0,0,0,0.45),
+        0 0 25px rgba(244,77,0,0.18);
+    }
+    .contact_card img {
+      opacity: 0.9;
+    
+      transition: all 0.3s ease;
+    }
+    
+    .contact_card:hover img {
+      transform: scale(1.08);
+    
+      opacity: 1;
+    }
+    .contact_section{
+      width: 1250px;
+    
+      margin-bottom: 100px;
+    
+      padding: 35px 40px;
+    
+      position: relative;
+      overflow: hidden;
+    
+      background: rgba(255,255,255,0.04);
+    
+      border: 1px solid rgba(255,255,255,0.15);
+    
+      border-radius: 18px;
+    
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.5);
+    
+      backdrop-filter: blur(8px);
+    
+      transition: all 0.45s ease;
+    
+      animation: slideUp 0.7s ease-out;
+    }
+    
+    .contact_section::before{
+      content: "";
+    
+      position: absolute;
+      inset: 0;
+    
+      border-radius: inherit;
+    
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(255,255,255,0.015),
+          transparent 70%
+        );
+    
+      opacity: 0.35;
+    
+      pointer-events: none;
+    }
+    
+    .contact_section::after{
+      content: "";
+    
+      position: absolute;
+    
+      left: 32px;
+      top: 32px;
+    
+      width: 2px;
+      height: 55px;
+    
+      background: #F44D00;
+    
+      border-radius: 2px;
+    
+      opacity: 0.8;
+    
+      box-shadow:
+        0 0 10px rgba(244,77,0,0.6);
+    
+      transition: all 0.3s ease;
+    }
+    
+    .contact_section:hover{
+      transform: translateY(-6px) scale(1.01);
+    
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.45),
+        0 0 50px rgba(244,77,0,0.25);
+    }
+    
+    .contact_section:hover::after{
+      height: 75px;
+    
+      box-shadow:
+        0 0 14px rgba(244,77,0,0.8),
+        0 0 30px rgba(244,77,0,0.3);
+    }
+    
+    .contact_grid{
+      display: flex;
+      gap: 25px;
+    
+      flex-wrap: wrap;
+    
+      margin-top: 10px;
+    
+      position: relative;
+      z-index: 2;
+    
+      margin-left: 30px;
+    }
+    
+    .contact_card{
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    
+      min-width: 260px;
+    
+      padding: 22px 24px;
+    
+      text-decoration: none;
+    
+      background: rgba(255,255,255,0.04);
+    
+      border: 1px solid rgba(255,255,255,0.12);
+    
+      border-radius: 18px;
+    
+      backdrop-filter: blur(10px);
+    
+      transition: all 0.35s ease;
+    
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+    }
+    
+    .contact_card:hover{
+      transform: translateY(-5px);
+    
+      border-color: rgba(244,77,0,0.45);
+    
+      background: rgba(255,255,255,0.06);
+    
+      box-shadow:
+        0 20px 40px rgba(0,0,0,0.45),
+        0 0 25px rgba(244,77,0,0.18);
+    }
+    
+    .contact_info{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .contact_label{
+      color: white;
+    
+      font-size: 20px;
+    
+      font-family: 'Bodoni72', sans-serif;
+    }
+    
+    .contact_value{
+      color: #a3a3a3;
+    
+      font-size: 15px;
+    
+      margin-top: 4px;
+    
+      font-family: 'Satoshi', sans-serif;
+    }
     .line_footer{
       height: 2px;
       width: 100vw;
@@ -886,4 +1106,15 @@
       display: flex;
      
       align-items: center;
+    }
+    @media (max-width: 900px) {
+
+      .contact_grid {
+        flex-direction: column;
+      }
+    
+      .contact_card {
+        width: 100%;
+      }
+    
     }

@@ -155,7 +155,7 @@ Hello! I'm <span className={styles.name}>Ivona</span>
   <Link  href="/about" className={styles.button_link}>
             <button className={styles.button1}>About Me</button>
         </Link>
-        <Link  href="/designs" className={styles.button_link}>
+        <Link  href="/about#contact" className={styles.button_link}>
             <button className={styles.button2}>Contact Me</button>
         </Link>
     
