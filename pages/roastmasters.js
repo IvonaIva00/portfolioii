@@ -81,7 +81,7 @@ export default function RoastMasters() {
             <button className={styles.button}>View website</button>
         </a>
         </div>
-        <Image className={styles.mockup} src="/images/RMHome.png" height={600} width={1200} />
+        <Image className={styles.mockup} src="/images/ROast_Masters_Landing.png" height={600} width={1200} />
      
       
         {/* <Image className={styles.loading} src="/images/Loading.png" height={400} width={500}/> */}
@@ -123,9 +123,9 @@ Roast Masters is a modern coffee shop website focused on creating a warm and inv
        rel="noopener noreferrer">
       <Image src="/images/linkedin-gray.png" height={45} width={45} />
       </a>
-      <Link href="https://www.linkedin.com/in/ivona-iv/">
+      <a href="mailto:ivona.i.work@gmail.com">
       <Image  src="/images/email-gray.png" height={45} width={45} />
-      </Link>
+      </a>
       </div>
       </div>
         </div>

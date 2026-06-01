@@ -82,7 +82,7 @@ export default function Pause () {
         </a>
         </div>
         
-                <Image className={styles.mockup} src="/images/Pause_mockup.jpg" height={800} width={1200} />
+                <Image className={styles.mockup} src="/images/Pause_App.png" height={550} width={1200} />
                 <h2 className={styles.name}>User Interface Design</h2>
 
                 <div className={styles.design}>
@@ -128,9 +128,9 @@ Pause was conceptualized with the aim of addressing the prevalent issue of manag
        rel="noopener noreferrer">
       <Image src="/images/linkedin-gray.png" height={45} width={45} />
       </a>
-      <Link href="https://www.linkedin.com/in/ivona-iv/">
+      <a href="mailto:ivona.i.work@gmail.com">
       <Image  src="/images/email-gray.png" height={45} width={45} />
-      </Link>
+      </a>
       </div>
       </div>
         </div>

@@ -332,9 +332,9 @@ Implementing AI to provide hints to users when they encounter challenges within 
        rel="noopener noreferrer">
       <Image src="/images/linkedin-gray.png" height={45} width={45} />
       </a>
-      <Link href="https://www.linkedin.com/in/ivona-iv/">
+      <a href="mailto:ivona.i.work@gmail.com">
       <Image  src="/images/email-gray.png" height={45} width={45} />
-      </Link>
+      </a>
       </div>
       </div>
         </div>

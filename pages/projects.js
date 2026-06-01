@@ -130,7 +130,7 @@ export default function Projects() {
     <Image
       className={styles.project_image_two}
       alt="LightSpeed preview"
-      src="/images/Light_Speed1.png"
+      src="/images/Light_Speed(1).png"
       height={800}
       width={650}
     />
@@ -254,9 +254,9 @@ export default function Projects() {
        rel="noopener noreferrer">
       <Image src="/images/linkedin-gray.png" height={45} width={45} />
       </a>
-      <Link href="https://www.linkedin.com/in/ivona-iv/">
+      <a href="mailto:ivona.i.work@gmail.com">
       <Image  src="/images/email-gray.png" height={45} width={45} />
-      </Link>
+      </a>
       </div>
       </div>
         </div>
