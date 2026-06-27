@@ -101,7 +101,59 @@ export default function Pause () {
 Pause was conceptualized with the aim of addressing the prevalent issue of managing stress and anxiety in daily life. The team identified a need to provide individuals with effective tools to track and alleviate stress levels, thereby enhancing overall well-being. By developing Pause, our goal was to offer users a platform where they could actively monitor their stress levels and explore various features designed to promote relaxation and mindfulness. Through the app's intuitive interface and visually appealing design, users can navigate seamlessly while engaging with calming visuals and interactive features tailored to alleviate stress. </p>
                <p className={styles.app_process}>In the project, we meticulously curated a color palette known for its calming properties, based on extensive research into color psychology and its impact on emotional well-being. Additionally, the logo design embodies the essence of Pause, merging elements of a dream catcher with a central pause sign. This symbolic representation signifies the app's mission to create a space for users to pause, reflect, and rejuvenate amidst the chaos of daily life. Through thoughtful design choices and user-centric features, Pause aims to empower individuals to manage stress effectively and cultivate a greater sense of peace and balance in their lives.</p>
                </div>
-               <Image className={styles.sheepy} src="/images/Colour3.png" width={380}  height={690}/>
+               <div className={styles.palette_card}>
+              
+  <div className={styles.palette_row}>
+  <div className={styles.color_item}>
+  <div
+    className={styles.color}
+    style={{ backgroundColor: "#C8B6FF" }}
+  />
+  <span className={styles.color_code}>#C8B6FF</span>
+</div>
+
+<div className={styles.color_item}>
+  <div
+    className={styles.color}
+    style={{ backgroundColor: "#ADE9FF" }}
+  />
+  <span className={styles.color_code}>#ADE9FF</span>
+</div>
+
+<div className={styles.color_item}>
+  <div
+    className={styles.color}
+    style={{ backgroundColor: "#FFD6FF" }}
+  />
+  <span className={styles.color_code}>#FFD6FF</span>
+</div>
+
+<div className={styles.color_item}>
+  <div
+    className={styles.color}
+    style={{ backgroundColor: "#C1FBA4" }}
+  />
+  <span className={styles.color_code}>#C1FBA4</span>
+</div>
+
+<div className={styles.color_item}>
+  <div
+    className={styles.color}
+    style={{ backgroundColor: "#FFEBFF" }}
+  />
+  <span className={styles.color_code}>#FFEBFF</span>
+</div>
+
+<div className={styles.color_item}>
+  <div
+    className={styles.color}
+    style={{ backgroundColor: "#001845" }}
+  />
+  <span className={styles.color_code}>#001845</span>
+</div>
+  </div>
+
+</div>
                 </div>
 
            

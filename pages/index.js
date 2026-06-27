@@ -136,7 +136,7 @@ export default function Home() {
    
     <div className={styles.description}>
       <div className={styles.introduction}>
-Hello! I'm <span className={styles.name}>Ivona</span>
+Hello, I'm <span className={styles.name}>Ivona</span>
         </div>
       <div className={styles.positions}>
         <h3 className={styles.position_one}>
