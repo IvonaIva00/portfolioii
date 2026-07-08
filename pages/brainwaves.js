@@ -93,45 +93,88 @@ export default function Brainwaves() {
             <button className={styles.button}>View Code</button>
         </a>
         </div>
+       
       <Image className={styles.mockup} src="/images/BW_Cover3.png" height={530} width={1300} />
-                <div className={styles.a}>
-        
       
-        </div>
-      
+         
+        <div className={styles.projectSummary}>
+
+<div className={styles.summaryCard}>
+    <span>Role</span>
+    <h3>UX Researcher & Front-end Developer</h3>
+</div>
+
+<div className={styles.summaryCard}>
+    <span>Duration</span>
+    <h3>4 Months</h3>
+</div>
+
+<div className={styles.summaryCard}>
+    <span>Platform</span>
+    <h3>Mobile App</h3>
+</div>
+
+<div className={styles.summaryCard}>
+    <span>Tools</span>
+    <h3>Figma • ExpoJs • Firebase</h3>
+</div>
+
+</div>
       </div>
       <div className={styles.firstcontainer}>
        
        <div className={styles.description}>
        <h2 className={styles.app}>Product Overview</h2>
        
-       <p className={styles.app_process}>Brainwaves is an educational mobile application created to help students aged 13–17 develop critical thinking and problem-solving skills through interactive learning experiences. Designed with accessibility and inclusivity in mind, the app combines puzzle-based challenges, structured progression, and AI-assisted guidance to support diverse learning needs. By providing personalized feedback and engaging activities, Brainwaves aims to make cognitive skill development both effective and enjoyable.
+       <p className={styles.app_process}>Brainwaves is an educational mobile application designed to help students aged 13–17 improve critical thinking through interactive puzzles and AI-assisted learning. The experience emphasizes accessibility, engagement, and structured cognitive development.
        </p>
        </div>
-       <Image src="/images/About_Brainwaves.jpg" width={550}  height={350}/>
+       <Image src="/images/Brain_Waves1.png" width={650}  height={350}/>
     
        </div>
-      <div className={styles.problem_solution}>
-            <div className={styles.problem}>
-        <h2 className={styles.app}>Defining The Problem</h2>
-        <p className={styles.app_process}>Teenagers, particularly students with ADHD, often struggle with maintaining focus, organizing information, and developing structured problem-solving habits. Existing educational tools frequently lack personalized guidance and engaging learning experiences.</p>
-        </div>
-        <div className={styles.solution}>
-        <h2 className={styles.app}>Creating The Solution</h2>
-        {/* <p className={styles.app_process}>Through the conducted research, it was determined that improving users' critical thinking could be achieved by offering them an organized framework for problem-solving via puzzle-solving activities. By regularly practicing this framework, users have the opportunity to enhance their critical thinking abilities. Moreover, the integration of AI technology provides users with consistent support and feedback, fostering a supportive environment. The research findings indicate that with the guidance and assistance of AI, users can effectively develop their critical thinking skills.</p> */}
-        <p className={styles.app_process}>Brainwaves combines puzzle-based learning with AI-powered assistance to help users strengthen critical thinking skills through structured challenges, personalized feedback, and an engaging educational environment.</p>
-        </div>
-        </div>
+       <div className={styles.challengeSection}>
+
+<div className={styles.challengeCard}>
+
+    <span className={styles.cardNumber}>01</span>
+
+    <h2>The Challenge</h2>
+
+    <p>
+        Many educational apps focus on memorization rather than developing
+        critical thinking skills. Students with ADHD often struggle to stay
+        engaged due to lengthy lessons, complex navigation, and limited
+        personalized support.
+    </p>
+
+</div>
+
+<div className={styles.challengeCard}>
+
+    <span className={styles.cardNumber}>02</span>
+
+    <h2>The Solution</h2>
+
+    <p>
+        Brainwaves combines interactive puzzle solving with AI-assisted
+        guidance to create an engaging learning experience. The app delivers
+        structured challenges, personalized feedback, and an accessible
+        interface designed to support diverse learning needs.
+    </p>
+
+</div>
+
+</div>
       
 
       
         <div className={styles.research_container}>
 
         <div className={styles.research}>
-        <Image src="/images/Brainwaves_research.jpg" width={650}  height={450}/>
+        
         <div className={styles.explanation}>
        
-        <h2 className={styles.research_title}>01. Research & Discovery</h2>
+        <h2 className={styles.research_title}>Research & Discovery</h2>
        
         <ul className={styles.findings_list}>
   <li>Students preferred short learning sessions.</li>
@@ -148,19 +191,9 @@ export default function Brainwaves() {
 
         </div> */}
 
-        
+<Image src="/images/Brainwaves_research.jpg" width={650}  height={450}/>
         </div>
-        {/* <div className={styles.user_persona}>
-            <div className={styles.user_persona_paragraph}>
-        <h2 className={styles.section_title}>Target User</h2>
-        <p className={styles.app_process}>Creating a user persona was a foundational step in our user research process, providing valuable insights into the needs, preferences, and behaviors of our target audience. Through extensive data collection and analysis, we crafted a fictional representation of our ideal user, embodying key demographic and psychographic characteristics. This persona served as a guiding archetype throughout our research endeavors, allowing us to empathize with the user's perspective and tailor our methodologies accordingly. By personifying our target audience, we gained a deeper understanding of their motivations, challenges, and goals, enabling us to design solutions that resonate with their unique needs. The user persona also facilitated effective communication and collaboration within the team, ensuring that everyone remained aligned with the user-centric vision of our project. Ultimately, by leveraging the insights gleaned from the user persona, we were able to conduct more meaningful and impactful user research, leading to the development of solutions that truly address the needs of our audience.</p>
-        </div>
-        <Image src="/images/Persona.png" width={400}  height={580}/>
-        </div> */}
-        {/* <div className={styles.primary_user_map}>
-        <h2 className={styles.section_title}>User Journey</h2>
-        <Image src="/images/PrimaryUserMap.png" width={1200}  height={400}/>
-        </div> */}
+     
         </div>
         <div className={styles.secondcontainer}>
        
@@ -168,8 +201,7 @@ export default function Brainwaves() {
             <h1  className={styles.section_title}>Branding</h1>
            
         <p  className={styles.app_process_design}>Recognizing the unique cognitive needs of students who struggle with ADHD, the team prioritized simplicity and clarity in design to ensure an easy user experience that won't cause distractions. The team decided to focus on designing a user-friendly interface to guide users through the app. Clear instructions and consistent design patterns were implemented to empower users to navigate through the app with confidence. </p>
-        <p className={styles.app_process_design}>
-Users of the app can explore Logic Problems, Numerical Problems, and Pattern Recognition Puzzles. The app offers a progressive learning experience where users can begin at Level 1 and advance through higher levels as they unlock them. </p>
+
         </div>
         
        
@@ -289,8 +321,8 @@ Users of the app can explore Logic Problems, Numerical Problems, and Pattern Rec
         </div>
         <div className={styles.logo_section}>
         <h2 className={styles.app}>Logo</h2>
-        <p className={styles.app_process_design}>The logo embodies the essence of the app's name through visual representation. It reflects the idea of expanding the mind and strengthening thinking skills through engaging challenges. With a clean and playful design, the logo captures the spirit of learning, curiosity, and discovery that Brainwaves encourages in its users.
-        </p>
+        {/* <p className={styles.app_process_design}>The logo embodies the essence of the app's name through visual representation. It reflects the idea of expanding the mind and strengthening thinking skills through engaging challenges. With a clean and playful design, the logo captures the spirit of learning, curiosity, and discovery that Brainwaves encourages in its users.
+        </p> */}
         <div className={styles.logo_card}>
         <div className={styles.logo_row}>
         <Image src="/images/BW_LogoBlue.png" width={350}  height={300}/>
@@ -311,7 +343,7 @@ Users of the app can explore Logic Problems, Numerical Problems, and Pattern Rec
         </div>
         <div  className={styles.lofi_design}>
             <h2 className={styles.app}>Wireframes </h2>
-            <p className={styles.app_process_lofi}>Following the Brainwaves style guide and brand identity, the team embarked on a series of low-fidelity layout design sprints. The design team generated a variety of iterations aiming to craft a captivating and enjoyable user experience. By combining the most promising features and designs from each iteration, the design team finalized a low-fidelity design for Brainwaves. </p>
+            {/* <p className={styles.app_process_lofi}>Following the Brainwaves style guide and brand identity, the team embarked on a series of low-fidelity layout design sprints. The design team generated a variety of iterations aiming to craft a captivating and enjoyable user experience. By combining the most promising features and designs from each iteration, the design team finalized a low-fidelity design for Brainwaves. </p> */}
             <h3 className={styles.app_subheader}>Word Problems Flow</h3>
             <div  className={styles.mockups}>
             <div  className={styles.screen_and_name}>
@@ -349,7 +381,7 @@ Users of the app can explore Logic Problems, Numerical Problems, and Pattern Rec
         </div> */}
         <div  className={styles.hifi_design}>
             <h2 className={styles.app}>High-Fidelity Prototype</h2>
-            <p className={styles.app_process_hifi}>The first look at the LoFi design helped the team to understand how Brainwaves is laid out and gave ideas for adding more features to the app. Before a detailed High-Fidelity prototype was made, the team worked on Brainwaves' UI components in small steps, trying out different colors and typography. Then, these components were implemented into the design to create the final HiFi prototype.</p>
+            {/* <p className={styles.app_process_hifi}>The first look at the LoFi design helped the team to understand how Brainwaves is laid out and gave ideas for adding more features to the app. Before a detailed High-Fidelity prototype was made, the team worked on Brainwaves' UI components in small steps, trying out different colors and typography. Then, these components were implemented into the design to create the final HiFi prototype.</p> */}
             <h3 className={styles.app_subheader}>Word Problems Flow</h3>
             <div  className={styles.mockups}>
                 <div  className={styles.screen_and_name}>

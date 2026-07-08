@@ -105,7 +105,18 @@ export default function Home() {
       <canvas className={styles.neuralBackground}></canvas>
       <div className={styles.backgroundGlow}></div>
       <div className={styles.backgroundGlow2}></div>
-     
+      <div className={styles.heroBackground}>
+
+<div className={styles.heroAtmosphere}></div>
+
+<div className={styles.heroArc}></div>
+
+<div className={styles.heroShadow}></div>
+
+<div className={styles.heroBloom}></div>
+
+</div>
+
       <div className={styles.navbar}>
          <Link  href="/">
          
@@ -131,19 +142,24 @@ export default function Home() {
      
     <div className={styles.content}>
     <div className={styles.container}>
+    <div className={styles.heroGlow}></div>
+
+
 <div className={styles.big_container}>
   <div className={styles.name_picture_description}>
    
     <div className={styles.description}>
+  
+      
       <div className={styles.introduction}>
-Hello, I'm <span className={styles.name}>Ivona</span>
+ Hello there, I'm <span className={styles.name}>Ivona</span>
         </div>
       <div className={styles.positions}>
         <h3 className={styles.position_one}>
          </h3>
        
       </div>
-      <div className={styles.job_description}> Digital Designer and Developer</div>
+      <div className={styles.job_description}> Digital Designer and Developer </div>
     
     
       
@@ -152,11 +168,11 @@ Hello, I'm <span className={styles.name}>Ivona</span>
   
   </div>
   <div className={styles.buttons}>
-  <Link  href="/about" className={styles.button_link}>
-            <button className={styles.button1}>About Me</button>
+  <Link  href="/projects" className={styles.button_link}>
+            <button className={styles.button1}>View my Work</button>
         </Link>
         <Link  href="/about#contact" className={styles.button_link}>
-            <button className={styles.button2}>Contact Me</button>
+            <button className={styles.button2}>Get in touch</button>
         </Link>
     
         </div>

@@ -74,9 +74,18 @@
     transform: translateY(0);
   }
 }
+.heroImageWrapper{
+  background:#000;
+  border-radius:20px;
+  overflow:hidden;
+}
 .page_content{
   animation: slideUp 0.8s ease-out;
   margin-top: 20px;
+}
+.mockup{
+  display:block;
+  background:#000;
 }
 
 .scroll_animation {
@@ -108,7 +117,7 @@
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  border-bottom: 2px solid rgba(255,255,255,0.15);
+  border-bottom: 0.5px solid rgba(255,255,255,0.15);
   /* margin-bottom: 95px; */
   padding-bottom: 10px;
   margin-top: 20px;
@@ -153,6 +162,93 @@
     src: url('/fonts/Bodoni72-Book.ttf') format('truetype');
     /* Add other font formats if necessary */
   }
+  .projectSubtitle{
+    width: 900px;
+    margin: 45px auto 70px auto;
+
+    text-align: center;
+
+    color: #cfcfcf;
+
+    font-size: 24px;
+
+    line-height: 1.7;
+
+    font-family: 'Bodoni72', sans-serif;
+}
+
+.projectSummary{
+
+    width: 1200px;
+    max-width: 90vw;
+
+    margin: 0 auto 120px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+align-items: flex-start;
+    gap: 40px;
+    margin-top: 150px;
+}
+
+.summaryCard{
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    transition: all .35s ease;
+}
+
+.summaryCard:hover{
+
+    transform: translateY(-4px);
+
+    border-color: rgba(244,77,0,.35);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.45),
+        0 0 30px rgba(244,77,0,.12);
+}
+
+.summaryCard span{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:#F44D00;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-family:'Satoshi',sans-serif;
+}
+
+.summaryCard h3{
+
+    margin:0;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:500;
+
+    line-height:1.5;
+
+    font-family:'Bodoni72',sans-serif;
+}
   .button{
     width: 280px;
     height: 55px;
@@ -287,7 +383,7 @@
   .firstcontainer{
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* this fixes the alignment */
+    align-items: center;
     gap: 150px;
     margin-top: 100px;
   }
@@ -764,6 +860,89 @@
     font-weight:600;
     margin-bottom: 50px;
   }
+  .challengeSection{
+
+    width:1200px;
+    max-width:90vw;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.challengeCard{
+
+    padding:42px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    transition:.35s ease;
+}
+
+.challengeCard:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(244,77,0,.30);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45),
+        0 0 35px rgba(244,77,0,.15);
+
+}
+
+.cardNumber{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#F44D00;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-family:'Satoshi',sans-serif;
+
+}
+
+.challengeCard h2{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:22px;
+
+    font-family:'Bodoni72',sans-serif;
+
+}
+
+.challengeCard p{
+
+    color:#d3d3d3;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    font-family:'Satoshi',sans-serif;
+
+}
   .line_footer{
     height: 2px;
     width: 100vw;
@@ -800,4 +979,14 @@
    
     align-items: center;
   }
+
+  @media (max-width:900px){
+
+    .challengeSection{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    }
 

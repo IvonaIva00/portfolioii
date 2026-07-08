@@ -5,6 +5,8 @@
   min-height: 100vh;
   width: 100%;
   background-color: #000;
+  position:relative;
+ 
 }
 
 @keyframes slideUp {
@@ -17,6 +19,33 @@
     transform: translateY(0);
   }
 }
+@keyframes pulseGlow{
+
+  0%{
+      opacity:.55;
+      transform:translateX(-50%) scale(1);
+  }
+
+  50%{
+      opacity:.8;
+      transform:translateX(-50%) scale(1.08);
+  }
+
+  100%{
+      opacity:.55;
+      transform:translateX(-50%) scale(1);
+  }
+
+}
+
+
+
+  
+
+
+
+
+
 /* .cyberGrid {
   position: fixed;
   top: 0;
@@ -72,19 +101,60 @@
   background: radial-gradient(
     circle,
     rgba(244,77,0,0.35) 0%,
-    rgba(244,77,0,0.15) 40%,
+    rgba(244,77,0,0.15) 50%,
     transparent 70%
   );
 
   filter: blur(140px);
   pointer-events: none;
 }
+.hello{
+  color: #F44D00;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 300s;
+}
+@keyframes heroPulse{
+
+  0%{
+
+      opacity:.85;
+
+      transform:translateX(-50%) scale(1);
+
+  }
+
+  50%{
+
+      opacity:1;
+
+      transform:translateX(-50%) scale(1.04);
+
+  }
+
+  100%{
+
+      opacity:.85;
+
+      transform:translateX(-50%) scale(1);
+
+  }
+
+}
+
+.heroBloom{
+
+  animation:heroPulse 7s ease-in-out infinite;
+
+}
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center; /* keeps container system clean */
-  padding-top: 40px;
+  
+
+  z-index:5;
 }
 .container {
   width: 85%;
@@ -98,7 +168,7 @@
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  border-bottom: 2px solid rgba(255,255,255,0.15);
+  border-bottom: 0.5px solid rgba(255,255,255,0.15);
   padding-bottom: 10px;
   margin-top: 20px;
   /* margin-bottom: 95px; */
@@ -114,9 +184,10 @@
 
 .name_picture_description {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   max-width: 850px;
+  margin-top: 30px;
 }
 .introduction,
 .description,
@@ -126,10 +197,12 @@
 .big_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
+  position:relative;
+  z-index:2;
 }
 
 /* THIS is the key new wrapper */
@@ -146,7 +219,7 @@
   flex-direction: column;
   gap: 5px;
 
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* .introduction {
@@ -173,9 +246,9 @@ width: 1000px;
 
 .job_description{
   width: 100%;
-  max-width: 900px;
-  font-size: clamp(28px, 4vw, 50px);
-  text-align: left;
+  font-size: 48px;
+  text-align: center;
+  color: #a3a3a3;
   animation: slideUp 0.7s ease-out;
   animation-delay: 0.2s;
   animation-fill-mode: backwards;
@@ -188,6 +261,7 @@ width: 1000px;
   text-decoration:underline;
   text-underline-offset: 8px;
   font-family: 'Satoshi', sans-serif;
+
   
 }
 .first_title:hover{
@@ -197,6 +271,7 @@ width: 1000px;
 }
 .second_title{
   color: #a3a3a3;
+  opacity: 70;
   font-size: 18px;
   margin-top: 30px;
   text-decoration: none;
@@ -236,10 +311,10 @@ width: 1000px;
   
 }
 .introduction{
-  font-size: clamp(40px, 5vw, 70px);
+  font-size: clamp(42px, 5vw, 70px);
   width: 100%;
   max-width: 700px;
-  text-align: left;
+  text-align: center;
   font-family: 'Satoshi', sans-serif;
 
   animation: slideUp 0.7s ease-out;
@@ -258,10 +333,9 @@ width: 1000px;
   color: #8A00C4;
 }
 
-.button1,
-.button2{
-  width: 280px;
-  height: 55px;
+.button1{
+  width: 270px;
+  height: 60px;
 
   border-radius: 50px;
   border: none;
@@ -283,14 +357,39 @@ width: 1000px;
   box-shadow:
     0 6px 18px rgba(244,77,0,0.22);
 }
+.button2{
+  width: 270px;
+  height: 60px;
+
+  border-radius: 50px;
+  border: 1px, solid #F44D00;
+
+  background-color: transparent;
+
+  color: white;
+
+  font-size: 18px;
+  font-family: 'Bodoni72', sans-serif;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+
+  box-shadow:
+    0 6px 18px rgba(244,77,0,0.22);
+}
 .buttons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+  
   gap: 120px;
 
-  margin-top: 100px;
-  margin-left: 120px;
+  margin-top: 120px;
+  
   animation: slideUp 0.7s ease-out;
   animation-delay: 0.2s;
   animation-fill-mode: backwards;
@@ -321,6 +420,9 @@ width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position:relative;
+
+    z-index:5;
   }
   
   .footer_line {
