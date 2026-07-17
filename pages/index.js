@@ -169,10 +169,16 @@ export default function Home() {
   </div>
   <div className={styles.buttons}>
   <Link  href="/projects" className={styles.button_link}>
-            <button className={styles.button1}>View my Work</button>
+            <button className={styles.button1}>View my Work
+
+           
+            </button>
+            
         </Link>
         <Link  href="/about#contact" className={styles.button_link}>
-            <button className={styles.button2}>Get in touch</button>
+            <button className={styles.button2}>Get in touch
+           
+            </button>
         </Link>
     
         </div>

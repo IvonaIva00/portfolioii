@@ -21,6 +21,75 @@
     transform: translateY(0);
   }
 }
+.reveal{
+
+  opacity:0;
+
+  transform:translateY(80px);
+
+  transition:
+      opacity .8s ease,
+      transform .8s ease;
+
+}
+
+.show{
+
+  opacity:1;
+
+  transform:translateY(0);
+
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(45px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heroTitle,
+.heroDescription,
+.project_one,
+.project_two,
+.project_three,
+.project_four,
+.project_five {
+  transition:
+    opacity 0.65s cubic-bezier(.22,.61,.36,1),
+    transform 0.65s cubic-bezier(.22,.61,.36,1);
+}
+.project_one{
+
+  transition-delay:.10s;
+
+}
+
+.project_two{
+
+  transition-delay:.20s;
+
+}
+
+.project_three{
+
+  transition-delay:.20s;
+
+}
+
+.project_four{
+
+  transition-delay:.25s;
+
+}
+
+.project_five{
+
+  transition-delay:.30s;
+
+}
 .constellationBackground {
   position: fixed;
   top: 0;
@@ -66,6 +135,17 @@
 
   filter: blur(140px);
   pointer-events: none;
+}
+
+
+@keyframes constellationFloat {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-30px);
+  }
 }
 .navbar{
   display: flex;
@@ -145,26 +225,136 @@
     padding: 0 20px;
   }
   
-  .page_title {
-    color: white;
+  .hero{
+
+    width:85%;
+    max-width:1200px;
+
+    margin:140px auto 180px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.heroNumber{
+
+    color:#F44D00;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    font-family:'Satoshi';
+
+}
+
+.heroTitle{
+
+    margin-top:20px;
+
+    font-size:clamp(72px,9vw,120px);
+
+    line-height:1;
+
+    font-weight:500;
+
+    color:white;
+
+    font-family:'Satoshi';
+
+}
+
+.heroDescription{
+
+    margin-top:30px;
+
+    width:500px;
+
+    color:#9f9f9f;
+
+    font-size:24px;
+
+    line-height:1.6;
+
+    font-family:'Satoshi';
+
+}
+.projectContent{
+
+  display:grid;
+
+  grid-template-columns:480px 1fr;
+
+  gap:90px;
+
+  align-items:center;
+
+}
+.project{
+
+  width:85%;
+
+  max-width:1400px;
+
+  margin:0 auto 220px;
+
+  position:relative;
+
+  z-index:5;
+
+}
+.projectInfo{
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+.projectSubtitle{
+
+  margin-top:8px;
+
+  color:#9b9b9b;
+
+  font-size:28px;
+
+  font-weight:400;
+
+}
+.caseStudy{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:14px;
+
+  margin-top:40px;
+
+  color:#F44D00;
+
+  text-decoration:none;
+
+  font-size:18px;
+
+  transition:.3s;
+
+}
+
+.caseStudy span{
+
+  transition:.3s;
+
+}
+
+.caseStudy:hover span{
+
+  transform:translateX(6px);
+
+}
   
-    font-size: clamp(32px, 5vw, 45px);
-  
-    margin: 0;
-  
-    animation: slideUp 0.6s ease-out;
-  }
-  
-  .project_underline {
-    width: 180px;
-    height: 2px;
-  
-    background-color: #F44D00;
-  
-    margin-top: 8px;
-  
-    animation: slideUp 0.4s ease-out;
-  }
   .project_one,
 .project_two,
 .project_three,

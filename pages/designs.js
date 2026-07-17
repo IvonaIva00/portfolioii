@@ -73,8 +73,17 @@ export default function Designs () {
    
     </div>
             
-            <h1 className={styles.page_title}>Designs</h1>
-            <div className={styles.design_underline}></div>
+    <section className={styles.hero}>
+
+<h1 className={styles.heroTitle}>
+  Designs
+</h1>
+
+<p className={styles.heroDescription}>
+  A collection of visual experiences crafted through graphic design, illustration, and digital creativity.
+</p>
+
+</section>
             <div className={styles.gallery}>
 
 {/* CARD 1 */}

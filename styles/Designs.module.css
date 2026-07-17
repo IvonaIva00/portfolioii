@@ -85,6 +85,52 @@
 .design_three {
   animation-delay: 0.3s;
 }
+.hero{
+
+  width:85%;
+  max-width:1200px;
+
+  margin:140px auto 120px;
+
+  position:relative;
+
+  z-index:5;
+
+}
+
+
+.heroTitle{
+
+    margin-top:20px;
+
+    font-size:clamp(72px,9vw,120px);
+
+    line-height:1;
+
+    font-weight:500;
+
+    color:white;
+
+    font-family:'Satoshi';
+
+}
+
+
+.heroDescription{
+
+    margin-top:30px;
+
+    width:500px;
+
+    color:#9f9f9f;
+
+    font-size:24px;
+
+    line-height:1.6;
+
+    font-family:'Satoshi';
+
+}
 .gallery {
   width: 100%;
   max-width: 1100px;
@@ -174,21 +220,7 @@
 .link{
   text-decoration: none;
 }
-.page_title{
-  color: white;
-  font-size: 45px;
-  margin-right: 1075px;
-  margin-bottom: 0;
-  animation: slideUp 0.6s ease-out;
-}
-.design_underline{
-  height: 2px;
-  width: 170px;
-  background-color: #F44D00;
-  margin-right: 1075px;
-  margin-bottom: 50px;
-  animation: slideUp 0.4s ease-out;
-}
+
 
 .app{
   color: aliceblue;
