@@ -90,6 +90,70 @@
   padding-bottom: 10px;
   margin-top: 20px;
 }
+.section{
+  margin-top:120px;
+  margin-bottom:120px;
+  }
+.page_content{
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  animation: slideUp 0.8s ease-out;
+}
+.title_button{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:100px;
+  margin-bottom:60px;
+}
+.summary{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+  }
+  
+  
+  .summary span{
+  color:#999;
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  }
+  .title{
+    font-size:42px;
+    color:white;
+    margin-bottom:30px;
+    letter-spacing:-1px;
+    }
+  
+  .summary h3{
+  color:white;
+  font-size:22px;
+  font-weight:400;
+  }
+.mockup{
+  width:100%;
+  height:auto;
+  border-radius:30px;
+  box-shadow:
+  0 30px 80px rgba(0,0,0,.5);
+ }
+.infoCard{
+
+  background:rgba(255,255,255,.04);
+  
+  backdrop-filter:blur(20px);
+  
+  border:1px solid rgba(255,255,255,.08);
+  
+  border-radius:22px;
+  
+  padding:60px;
+  
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.45);
+  
+  }
 .button{
   width: 280px;
   height: 55px;
@@ -105,14 +169,7 @@
   transform: translateY(-3px); /* moves button slightly up */
   box-shadow: 0 6px 18px rgba(244, 77, 0, 0.45); /* orange glow */
 }
-.title_button{
-  display: flex;
-  flex-direction: row;
-  gap: 675px;
-  align-items: center;
-  margin-bottom: 50px;
-  margin-top: 45px;
-}
+
 .logo{
   margin-left: 200px;
     align-items: center;
@@ -169,11 +226,9 @@
     font-family: 'Bodoni72', sans-serif;
   }
   .board{
-    display: flex;
-    flex-direction: row;
-    margin-top: 200px;
-    gap: 60px;
-  }
+    margin-top:120px;
+    display:flex;
+    }
   .title{
     color: aliceblue;
     font-family: 'Bodoni72', sans-serif;
@@ -189,12 +244,32 @@
   }
   .board_description{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 50px;
     color: white;
     margin-bottom: 200px;
   }
 
-
+  .design_challenges{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    }
+    
+    
+    .design_card{
+    
+    background:
+    rgba(255,255,255,.04);
+    
+    border:
+    1px solid rgba(255,255,255,.08);
+    
+    padding:40px;
+    
+    border-radius:25px;
+    
+    }
   .desript{
     width: 480px;
     
@@ -225,31 +300,17 @@
    
   }
   .players_row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    gap: 30px;
-  
-    width: 1100px;
-    max-width: 90vw;
-  
-    padding: 40px;
-  
-    margin-top: 30px;
-  
-    background: rgba(255,255,255,0.03);
-  
-    border: 1px solid rgba(255,255,255,0.08);
-  
-    border-radius: 24px;
-  
-    backdrop-filter: blur(10px);
-  
-    box-shadow:
-      0 20px 60px rgba(0,0,0,0.45),
-      0 0 40px rgba(244,77,0,0.08);
-  }
+
+    width:100%;
+    
+    display:grid;
+    
+    grid-template-columns:
+    repeat(4,1fr);
+    
+    padding:50px;
+    
+    }
   .player_card{
     display: flex;
     justify-content: center;
@@ -278,6 +339,204 @@
     box-shadow:
       0 10px 30px rgba(0,0,0,0.35);
   }
+  .alien_carousel{
+
+    width:100%;
+    
+    margin-top:70px;
+    
+    padding:40px 0 80px;
+    
+    }
+    
+    
+    
+    .alienSwiper{
+    
+    width:100%;
+    
+    padding-top:40px;
+    
+    padding-bottom:40px;
+    
+    }
+    
+    
+    
+    .alienSlide{
+    
+    width:300px !important;
+    
+    }
+    
+    
+    
+    .alien_card{
+    
+    
+    height:380px;
+    
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    
+    background:
+    
+    rgba(255,255,255,0.04);
+    
+    
+    border:
+    
+    1px solid rgba(255,255,255,0.1);
+    
+    
+    border-radius:30px;
+    
+    
+    backdrop-filter:blur(20px);
+    
+    
+    
+    box-shadow:
+    
+    0 20px 60px rgba(0,0,0,.5);
+    
+    
+    
+    transition:.5s;
+    
+    
+    }
+    
+    
+    
+    .alien_card:hover{
+    
+    
+    transform:translateY(-15px);
+    
+    
+    
+    border-color:
+    
+    rgba(244,77,0,.5);
+    
+    
+    
+    box-shadow:
+    
+    0 30px 80px rgba(244,77,0,.2);
+    
+    
+    
+    }
+    
+    
+    
+    .alien_image_container{
+    
+    
+    height:230px;
+    
+    display:flex;
+    
+    align-items:center;
+    
+    justify-content:center;
+    
+    
+    }
+    
+    
+    
+    .alien_card h3{
+    
+    
+    color:white;
+    
+    
+    font-family:'Bodoni72',serif;
+    
+    
+    font-size:26px;
+    
+    
+    margin-top:20px;
+    
+    
+    }
+    
+    
+    
+    .alien_card p{
+    
+    
+    color:#a3a3a3;
+    
+    
+    font-family:'Satoshi',sans-serif;
+    
+    
+    letter-spacing:2px;
+    
+    
+    font-size:14px;
+    
+    
+    }
+    .alien_carousel{
+
+      position:relative;
+      
+      }
+      
+      
+      .alien_carousel::before{
+      
+      
+      content:"";
+      
+      
+      position:absolute;
+      
+      
+      width:500px;
+      
+      height:500px;
+      
+      
+      top:50%;
+      
+      left:50%;
+      
+      
+      transform:translate(-50%,-50%);
+      
+      
+      
+      background:
+      
+      radial-gradient(
+      circle,
+      rgba(244,77,0,.25),
+      transparent 70%
+      );
+      
+      
+      
+      filter:blur(80px);
+      
+      
+      z-index:-1;
+      
+      
+      }
   .player_overlay{
     position: absolute;
     inset: 0;
@@ -375,12 +634,12 @@
     margin-top: 30px;
   }
   .app_process_assets{
-    color: aliceblue;
-    font-family: 'Bodoni72', sans-serif;
-    width: 480px;
-    font-size: 20px;
-    margin-top: 50px;
-  }
+    max-width:520px;
+    line-height:1.8;
+    font-size:18px;
+    color:#bcbcbc;
+    font-family:'Satoshi',sans-serif;
+    }
   .design_row_two{
     margin-top: 30px;
   }
@@ -399,13 +658,21 @@
     margin-top: 100px;
   }
   .board_desc{
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    margin-bottom: 200px;
-    align-items: center;
-    justify-content: center;
-  }
+
+    display:flex;
+    
+    align-items:center;
+    
+    gap:80px;
+    
+    background:
+    rgba(255,255,255,.03);
+    
+    padding:60px;
+    
+    border-radius:30px;
+    
+    }
   .board_ideation{
     display: flex;
     flex-direction: column;
@@ -418,18 +685,18 @@
     flex-direction: row;
     margin-right: 100px;
   }
-  .mini_games_container{
-    margin-right: 400px;
-    width: 350px;
-    
-  }
+
   .game_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
-  }
+
+    display:grid;
+    
+    grid-template-columns:1fr 1fr;
+    
+    gap:80px;
+    
+    align-items:center;
+    
+    }
   .mini_games_two{
     display: flex;
     flex-direction: row;

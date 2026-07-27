@@ -241,39 +241,6 @@ View Case Study
 
 </div>
 
-<div className={`${styles.project_two} ${styles.hidden}`}>
-
-  <div className={styles.left_column_two}>
-    <h1 className={styles.app_title_two}>Light Speed</h1>
-
-    <p className={styles.app_role}>
-      Game Design / Prototyping
-    </p>
-
-    <p className={styles.app_description_two}>
-    A multiplayer board game that takes players on an adventure through the solar system. Roll the dice, visit planets, and unlock exciting space mini-games along the way.
-    </p>
-
-    <a href="/speedlight" className={styles.caseStudy}>
-
-View Project
-
-<span>→</span>
-
-</a>
-  </div>
-
-  <div className={styles.right_column_two}>
-    <Image
-      className={styles.project_image_two}
-      alt="LightSpeed preview"
-      src="/images/Light_Speed(1).png"
-      height={800}
-      width={650}
-    />
-  </div>
-
-</div>
 <div className={`${styles.project_four} ${styles.hidden}`}>
 
   <div className={styles.left_column_four}>
@@ -367,6 +334,39 @@ View Project
       className={styles.project_image_five}
       alt="Roast Masters preview"
       src="/images/RoastMasters.png"
+      height={800}
+      width={650}
+    />
+  </div>
+
+</div>
+<div className={`${styles.project_two} ${styles.hidden}`}>
+
+  <div className={styles.left_column_two}>
+    <h1 className={styles.app_title_two}>Light Speed</h1>
+
+    <p className={styles.app_role}>
+      Game Design / Prototyping
+    </p>
+
+    <p className={styles.app_description_two}>
+    A multiplayer board game that takes players on an adventure through the solar system. Roll the dice, visit planets, and unlock exciting space mini-games along the way.
+    </p>
+
+    <a href="/speedlight" className={styles.caseStudy}>
+
+View Project
+
+<span>→</span>
+
+</a>
+  </div>
+
+  <div className={styles.right_column_two}>
+    <Image
+      className={styles.project_image_two}
+      alt="LightSpeed preview"
+      src="/images/Light_Speed(1).png"
       height={800}
       width={650}
     />

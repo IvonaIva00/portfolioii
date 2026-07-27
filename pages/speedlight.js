@@ -1,8 +1,51 @@
 import styles from '@/styles/SpeedLight.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
 import { useEffect } from "react";
 export default function SpeedLight() {
+  const aliens = [
+    {
+      image:"/images/alien1.png",
+      name:"Cosmic Explorer",
+      level:"Level 01"
+    },
+    {
+      image:"/images/alien_2.png",
+      name:"Galaxy Guardian",
+      level:"Level 02"
+    },
+    {
+      image:"/images/alien3.png",
+      name:"Nebula Creature",
+      level:"Level 03"
+    },
+    {
+      image:"/images/alien4.png",
+      name:"Space Warrior",
+      level:"Level 04"
+    },
+
+    {
+      image:"/images/alien6.png",
+      name:"Alien Commander",
+      level:"Level 06"
+    },
+    {
+      image:"/images/alien7.png",
+      name:"Star Traveler",
+      level:"Level 07"
+    },
+    {
+      image:"/images/alien8.png",
+      name:"Galaxy Master",
+      level:"Level 08"
+    }
+  ];
     useEffect(() => {
         const canvas = document.querySelector("canvas");
         const ctx = canvas.getContext("2d");
@@ -85,12 +128,45 @@ export default function SpeedLight() {
      
       
         {/* <Image className={styles.loading} src="/images/Loading.png" height={400} width={500}/> */}
+        <section className={styles.overview}>
+
+<div className={styles.infoCard}>
+
+
+<div className={styles.summary}>
+
+<div>
+<span>Role</span>
+<h3>Game Designer & Developer</h3>
+</div>
+
+<div>
+<span>Duration</span>
+<h3>4 Months</h3>
+</div>
+
+<div>
+<span>Tools</span>
+<h3>Figma, Photoshop, Illustrator, React</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
         <div className={styles.board}>   <div className={styles.board_description}>
-        <h2 className={styles.title}>About Light Speed</h2>
-        <p className={styles.app_process}>Light Speed is a captivating online board game accommodating four players, unfolding across the wide space of the solar system. As participants roll the dice, they venture through space, encountering diverse challenges and engaging in thrilling mini-games upon reaching different planets. Along the journey, players must navigate through wormholes and complete a full circuit around the solar system to emerge victorious.</p>
-        
+        <div className={styles.design_card}>
+        <h2 className={styles.title}>What is Light Speed?</h2>
+        <p className={styles.app_process_assets}>Light Speed is an interactive space adventure game designed to combine exploration, strategy, and quick decision-making into one immersive experience.
+
+Inspired by classic board games and arcade-style challenges, the game takes players on a journey across the solar system where every move brings new obstacles, discoveries, and rewards.
+
+Players navigate through planets, collect resources, overcome mini-games, and upgrade their spacecraft as they travel deeper into space.</p>
         </div>
-        <Image className={styles.loading} src="/images/vertical-tablet.jpg" height={450} width={650}/>
+        {/* <Image className={styles.aliens} src="/images/LightSpeed_heading.jpg" height={500} width={600}/> */}
+        </div>
+       
      
         </div>
      
@@ -99,14 +175,28 @@ export default function SpeedLight() {
             <h1 className={styles.title_design}>Design Process</h1>
             <div className={styles.design_challenges}>
         <div className={styles.design_column}>
+        <div className={styles.design_card}>
         <h2 className={styles.title}>Asset Design</h2>
         
         <p className={styles.app_process_assets}>In the project, the team brainstormed the concept of using pixel art assets with an isometric view to give the game a unique visual style. To make it more engaging, we decided on a space theme, with players represented by space ships navigating through cosmic environments. We also incorporated rewarding elements into the game, such as upgrading features symbolized by aliens. </p>
         </div>
+        </div>
         <div className={styles.design_row_two}>
+        <div className={styles.design_card}>
         <h2 className={styles.title}>Challenges</h2>
         
         <p className={styles.app_process_assets}>Throughout the design process, one of our main challenges involved optimizing the assets to ensure compatibility across different screen types and resolutions, which required careful attention to detail and thorough testing.</p>
+        </div>
+        </div>
+        </div>
+        <div className={styles.assets_board}>
+            <h2 className={styles.app_board}>The Board</h2>
+        
+        <div  className={styles.board_desc}>
+        <Image className={styles.picture} src="/images/GameBoard(4).png" height={600} width={1000}/>
+        <div  className={styles.board_ideation}>
+       
+        </div>
         </div>
         </div>
         <h2 className={styles.title_players}>Players</h2>
@@ -148,7 +238,96 @@ export default function SpeedLight() {
         <h2 className={styles.title_players}>Upgrading Features</h2>
         <div className={styles.design_row}>
 
-        <Image className={styles.aliens} src="/images/Aliens.png" height={600} width={1200}/>
+        <div className={styles.alien_carousel}>
+
+
+<Swiper
+
+modules={[Autoplay, EffectCoverflow]}
+
+effect="coverflow"
+
+grabCursor={true}
+
+centeredSlides={true}
+
+slidesPerView={"auto"}
+
+loop={true}
+
+
+autoplay={{
+ delay:3000,
+ disableOnInteraction:false
+}}
+
+
+coverflowEffect={{
+ rotate:0,
+ stretch:0,
+ depth:250,
+ modifier:1.5,
+ slideShadows:false
+}}
+
+className={styles.alienSwiper}
+
+>
+
+
+{aliens.map((alien,index)=>(
+
+<SwiperSlide 
+key={index}
+className={styles.alienSlide}
+>
+
+
+<div className={styles.alien_card}>
+
+
+<div className={styles.alien_image_container}>
+
+<Image
+
+src={alien.image}
+
+alt={alien.name}
+
+width={220}
+
+height={220}
+
+/>
+
+</div>
+
+
+
+<h3>
+{alien.name}
+</h3>
+
+
+<p>
+{alien.level}
+</p>
+
+
+
+</div>
+
+
+</SwiperSlide>
+
+
+))}
+
+
+</Swiper>
+
+
+</div>
     
         </div>
         </div>
@@ -156,18 +335,7 @@ export default function SpeedLight() {
         
 
 
-       
-        <div className={styles.assets_board}>
-            <h2 className={styles.app_board}>The Board</h2>
-        
-        <div  className={styles.board_desc}>
-        <Image className={styles.picture} src="/images/LightSpeed_Board.jpg" height={450} width={650}/>
-        <div  className={styles.board_ideation}>
-        <h3 className={styles.app}>Board Ideation</h3>
-        <p className={styles.app_process_assets}>The game board adheres closely to our team's initial vision of a space-themed setting. Positioned within the solar system, the board features all the planets orbiting around a central black hole. This layout not only aligns with our original concept but also adds an immersive dimension to the gameplay. Players engage in a competitive journey by rolling the dice and endeavoring to complete a full circuit around the board. The strategic element lies in navigating through the celestial landscape efficiently to outpace opponents and emerge victorious in the cosmic race. This thematic design choice not only enhances the visual appeal of the game but also contributes to its overall narrative and player engagement.</p>
-        </div>
-        </div>
-        </div>
+      
         <div >
         <Image className={styles.loading} src="/images/Planets_row.png" height={500} width={1200}/>
         
@@ -186,8 +354,10 @@ export default function SpeedLight() {
             </div>
             </div>
             <div className={styles.mini_games_desc}>
+            
             <h2 className={styles.title}>Mini Games</h2>
             <p className={styles.app_process_assets} >In LightSpeed, players experience various exciting mini-games as they explore the solar system. These challenges range from solving mazes and memory card games to quick reflexes in Wack-a-Mole and avoiding meteorite showers. Each mini-game brings a mix of fun and strategy, making LightSpeed an adventure-filled journey full of anticipation and excitement.</p>
+            
             </div>
             </div>
         </div>
