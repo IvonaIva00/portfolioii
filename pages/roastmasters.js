@@ -81,7 +81,7 @@ export default function RoastMasters() {
             <button className={styles.button}>View website</button>
         </a>
         </div>
-        <Image className={styles.mockup} src="/images/ROast_Masters_Landing.png" height={600} width={1200} />
+        <Image className={styles.mockup} src="/images/Roast_Masters_Landing.png" height={600} width={1200} />
      
       
         {/* <Image className={styles.loading} src="/images/Loading.png" height={400} width={500}/> */}

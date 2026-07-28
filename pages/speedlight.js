@@ -124,7 +124,7 @@ export default function SpeedLight() {
             <button className={styles.button}>Play game</button>
         </a>
         </div>
-        <Image className={styles.mockup} src="/images/Light_Speed2.PNG" height={530} width={1300} />
+        <Image className={styles.mockup} src="/images/Light_Speed2.png" height={530} width={1300} />
      
       
         {/* <Image className={styles.loading} src="/images/Loading.png" height={400} width={500}/> */}
